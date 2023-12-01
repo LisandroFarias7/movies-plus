@@ -1,0 +1,22 @@
+
+<section class="movies container"> 
+        <h2>Mis Peliculas Favoritas</h2>
+        <hr>
+    <div class="box-container-1">
+        {{#each movies}}
+            <div class="box-1">
+                
+                <div class="content">
+                    <img src="{{image}}" alt="">
+                    <h3>{{title}}</h3>
+                    <a href="{{description}}" class="load-more" target="_blank">VER TRAILER</a>
+                </div>
+                <a href="/movies/edit/{{id}}" class="load-more">Editar</a>
+                <a href="/movies/delete/{{id}}" class="load-more">Eliminar</a>
+            </div>
+        {{/each}}
+    </div>
+    
+    <div class="load-more" id="load-more-1">Cargar Mas</div>
+    <div class="load-more"><a href="/movies/add">Agregar Pelicula</a></div>
+</section>

@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container form">
+        <form action="/movies/edit/{{movie.id}}" method="post" class="form-1">
+            <input type="text" value="{{movie.title}}" name="title" placeholder="Titulo" autofocus required>
+            <input type="text" value="{{movie.description}}" name="description" id="description" placeholder="Descripcion" autofocus required>
+            <input type="text" value="{{movie.image}}" name="image" id="image" placeholder="Url">
+            <button type="submit" class="add">Editar</button>
+        </form>
+    </div>
+    <a href="/movies" class="btn-1">VOLVER</a>
+</div>
